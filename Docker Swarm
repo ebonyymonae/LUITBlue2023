@@ -1,0 +1,31 @@
+#Docker Swarm create nodes
+sudo hostnamectl set-hostname node1
+sudo reboot
+
+#Install Docker on nodes
+curl -fsSL https://get.docker.com -o get-docker.sh
+sh get-docker.sh
+
+#To locate identity file path to pen file in your Ubuntu directory
+readlink -f filename
+
+#Node configuration file
+Host node2
+HostName PrivateIP
+User ubuntu
+IdentityFile /root/.ssh/yourkey.pem
+
+Host node3
+HostName PrivateIP
+User ubuntu
+IdentityFile /root/.ssh/yourkey.pem
+
+#To access nodes in Docker Swarm
+ssh node2
+ssh node3
+sudo hostnamectl set-hostname node1
+
+#Initiate Swarm
+docker swarm init --advertise-addr <MANAGER_IP_ADDRESS>
+
+

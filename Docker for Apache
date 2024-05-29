@@ -1,0 +1,12 @@
+#Running images on Docker container (with Ubuntu image)
+sudo docker run -d -t -p 80:80 --name my_ubuntu_container ubuntu
+
+#Verify running container, install and update Apache 
+sudo docker container exec -it my_ubuntu_container /bin/bash
+
+docker exec -it my_ubuntu_container bash -c "apt-get update && apt-get upgrade -y"
+docker exec -it my_ubuntu_container bash -c "apt-get install -y apache2"
+
+apt-get update
+apt-get install apache2 -y 
+service apache2 start

@@ -1,0 +1,5 @@
+#Scan your Dynamodb Table
+aws dynamodb scan --table-name <your table name> --max-items 10
+
+#Verify if able to edit table (include your region)
+aws dynamodb put-item --table-name <yourtablename> --item \ '{"paritionkey": {"S": "<value>"}}' --region us-east-1

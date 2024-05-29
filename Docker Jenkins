@@ -1,0 +1,13 @@
+#Docker for Jenkins (Pull, create and run)
+sudo docker pull jenkins/jenkins:lts
+sudo docker create volume nameyourvolume
+docker run -d -p 8080:8080 -p 50000:50000 -v jenkins_data:/var/jenkins_home --name jenkins_container jenkins/jenkins:lts
+
+#Retrieve administrataive password
+sudo docker exec practice_jenkins cat /var/jenkins_home/secrets/initialAdminPassword
+
+#to check running containers
+sudo docker ps -a
+
+#to stop container
+sudo docker container stop <containerid>

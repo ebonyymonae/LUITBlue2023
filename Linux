@@ -1,0 +1,24 @@
+#For changing directories, root user and to switch users
+cd
+sudo su 
+su username
+exit
+
+#To create files, folders, users, groups and add users to groups
+touch
+mkdir
+sudo adduser 
+sudo addgroup groupname
+sudo adduser username groupname
+
+#To view files, the root directory to see permissions and contents of the directory
+ll
+ls -l
+
+#To change ownership of directories and owner over the entire directory from the root
+sudo chown :groupname file or directory
+sudo chown username file or directory
+
+#To grant permissions to the users
+chmod
+

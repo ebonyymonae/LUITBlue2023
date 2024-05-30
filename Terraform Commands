@@ -1,0 +1,35 @@
+#Remember to add .ty to Terraform configured files
+# Initialize Terraform: 
+# This command initializes the directory containing your Terraform configuration files.
+
+terraform init
+
+# Format Terraform Configuration Files:
+# This command automatically formats all Terraform configuration files in the current directory.
+# It recursively traverses directories, formatting all '.tf' files it encounters.
+
+terraform fmt -recursive
+
+
+# Validate Terraform Configuration Syntax:
+# This command checks the syntax and configuration of your Terraform files for errors.
+
+terraform validate
+
+# Preview Changes: 
+# This command shows an execution plan without making any actual changes.
+terraform plan
+
+# Apply Changes:
+# This command applies the changes required to reach the desired state of the configuration.
+terraform apply
+
+# During the apply process, Terraform will prompt you to confirm whether you want to perform the planned actions. 
+# You can type 'yes' to proceed.
+
+# Destroy Resources (Optional):
+# If you want to destroy the resources created by Terraform, you can use the following command.
+
+terraform destroy
+
+# This command will prompt you to confirm whether you want to destroy all the resources managed by the Terraform configuration.

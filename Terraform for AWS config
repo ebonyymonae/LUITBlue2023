@@ -1,0 +1,33 @@
+#To install Terraform on your EC2 instance or in your environment
+sudo yum install -y yum-utils shadow-utils
+sudo yum-config-manager --add-repo https://rpm.releases.hashicorp.com/AmazonLinux/hashicorp.repo
+sudo yum -y install terraform
+
+#Provider block
+provider "aws" {
+  region = "us-east-1"  # Update with your desired region
+}
+
+#Resource blocks for AWS
+resource "aws_vpc" "default" {
+  cidr_block = "10.0.0.0/16"
+}
+
+resource "aws_subnet" "default" {
+  vpc_id     = aws_vpc.default.id
+  cidr_block = "10.0.1.0/24"
+}
+
+resource "aws_security_group" "jenkins" {
+  # Configuration for security group...
+}
+
+resource "aws_instance" "jenkins_instance" {
+  # Configuration for EC2 instance...
+}
+
+resource "aws_s3_bucket" "jenkins_artifacts" {
+  # Configuration for S3 bucket...
+}
+
+#

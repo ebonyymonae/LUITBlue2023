@@ -6,7 +6,7 @@ Find out more about me & feel free to connect with me here:
 
 
 [![Linkedin Badge](https://img.shields.io/badge/-Ebony%20Moorer-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/ebony-moorer/)](https://www.linkedin.com/in/ebony-moorer/)
-[![Medium Badge](https://img.shields.io/badge/Ebony%20Moorer-12100E?style=flat-square&logo=medium&logoColor=white&link=https://medium.com/@ebonyymonae]/)
+![Medium Badge](https://img.shields.io/badge/Ebony%20Moorer-12100E?style=flat-square&logo=medium&logoColor=white&link=https://medium.com/@ebonyymonae]/)
 [![Gmail Badge](https://img.shields.io/badge/-ebonyymonae@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:ebonyymonae@gmail.com)](mailto:ebonyymonae@gmail.com)
 
 ## ⚡ Technologies
